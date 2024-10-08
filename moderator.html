@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moderator Dashboard</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+    <style>
+        /* CSS Code */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9; /* Light background for the body */
+            font-family: Arial, sans-serif; /* Font for the entire page */
+        }
+
+        .navbar {
+            background-color: #4CAF50; /* Green color for the navbar */
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .navbar h1 {
+            color: white; /* White text color for the navbar title */
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .sidebar {
+            width: 250px; /* Width of the sidebar */
+            height: 100vh; /* Full height for the sidebar */
+            position: fixed; /* Fixed position */
+            background-color: #333; /* Dark background for sidebar */
+            padding-top: 20px;
+        }
+
+        .sidebar a {
+            padding: 15px 20px;
+            text-decoration: none; /* No underline for links */
+            font-size: 18px;
+            color: white; /* White text color for links */
+            display: block; /* Block display for links */
+        }
+
+        .sidebar a:hover {
+            background-color: #575757; /* Darker gray on hover */
+        }
+
+        .main-content {
+            margin-left: 260px; /* Margin to the right of the sidebar */
+            padding: 20px; /* Padding for the main content */
+        }
+
+        .dashboard-container {
+            background-color: white; /* White background for dashboard content */
+            border-radius: 8px; /* Rounded corners */
+            padding: 20px; /* Padding inside the container */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        }
+
+        .dashboard-container h2 {
+            color: #4CAF50; /* Green color for headings */
+            font-size: 22px; /* Font size for headings */
+            margin-bottom: 20px; /* Space below the heading */
+        }
+
+        .stat-card {
+            background-color: #e8f5e9; /* Light green background for stat cards */
+            border-radius: 8px; /* Rounded corners for cards */
+            padding: 15px; /* Padding inside cards */
+            margin-bottom: 20px; /* Space below each card */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect for cards */
+        }
+
+        .stat-card h3 {
+            margin: 0; /* No margin for card titles */
+            color: #4CAF50; /* Green color for card titles */
+            font-size: 20px; /* Font size for card titles */
+        }
+
+        .stat-card p {
+            margin: 5px 0 0; /* Space above the paragraph */
+            color: #555; /* Slightly lighter text color for content */
+            font-size: 16px; /* Font size for card content */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Moderator Dashboard</h1>
+    </div>
+    <div class="sidebar">
+        <a href="#">Home</a>
+        <a href="#">Monitor Interactions</a>
+        <a href="#">Resolve Conflicts</a>
+        <a href="#">User Reports</a>
+        <a href="#">Logout</a>
+    </div>
+    <div class="main-content">
+        <div class="dashboard-container">
+            <h2>Welcome to the Moderator Dashboard</h2>
+            <div class="stat-card">
+                <h3>Total Users</h3>
+                <p>500</p>
+            </div>
+            <div class="stat-card">
+                <h3>Pending Reports</h3>
+                <p>25</p>
+            </div>
+            <div class="stat-card">
+                <h3>Resolved Conflicts</h3>
+                <p>100</p>
+            </div>
+            <!-- Add more stat cards or content as needed -->
+        </div>
+    </div>
+</body>
+</html>

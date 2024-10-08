@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politician Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #4CAF50;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .navbar h1 {
+            color: white;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            position: fixed;
+            background-color: #333;
+            padding-top: 20px;
+        }
+
+        .sidebar a {
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+
+        .main-content {
+            margin-left: 260px;
+            padding: 20px;
+        }
+
+        .menu-item {
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item h2 {
+            color: #4CAF50;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .menu-item p {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .menu-item button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .menu-item button:hover {
+            background-color: #45a049;
+        }
+
+        .header {
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 8px;
+        }
+
+        .header h2 {
+            margin: 0;
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <h1>Politician Dashboard</h1>
+</div>
+
+<div class="sidebar">
+    <a href="#">Dashboard</a>
+    <a href="#">Post Updates</a>
+    <a href="#">Respond to Issues</a>
+    <a href="#">Engage in Discussions</a>
+    <a href="#">Settings</a>
+    <a href="#">Logout</a>
+</div>
+
+<div class="main-content">
+    <div class="header">
+        <h2>Welcome, Politician</h2>
+    </div>
+
+    <div class="menu-item">
+        <h2>Post Updates</h2>
+        <p>Share updates with your constituents to keep them informed about the latest developments.</p>
+        <button>Post an Update</button>
+    </div>
+
+    <div class="menu-item">
+        <h2>Respond to Issues</h2>
+        <p>View and respond to the concerns raised by citizens in your constituency.</p>
+        <button>Respond Now</button>
+    </div>
+
+    <div class="menu-item">
+        <h2>Engage in Discussions</h2>
+        <p>Participate in public discussions and engage with the community to address pressing concerns.</p>
+        <button>Join a Discussion</button>
+    </div>
+</div>
+
+</body>
+</html>

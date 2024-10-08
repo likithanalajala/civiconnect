@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+    <style>
+        /* CSS Code */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9; /* Light background for the body */
+            font-family: Arial, sans-serif; /* Font for the entire page */
+        }
+
+        .navbar {
+            background-color: #4CAF50; /* Green color for the navbar */
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .navbar h1 {
+            color: white; /* White text color for the navbar title */
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .sidebar {
+            width: 250px; /* Width of the sidebar */
+            height: 100vh; /* Full height for the sidebar */
+            position: fixed; /* Fixed position */
+            background-color: #333; /* Dark background for sidebar */
+            padding-top: 20px;
+        }
+
+        .sidebar a {
+            padding: 15px 20px;
+            text-decoration: none; /* No underline for links */
+            font-size: 18px;
+            color: white; /* White text color for links */
+            display: block; /* Block display for links */
+        }
+
+        .sidebar a:hover {
+            background-color: #575757; /* Darker gray on hover */
+        }
+
+        .main-content {
+            margin-left: 260px; /* Margin to the right of the sidebar */
+            padding: 20px; /* Padding for the main content */
+        }
+
+        .dashboard-container {
+            background-color: white; /* White background for dashboard content */
+            border-radius: 8px; /* Rounded corners */
+            padding: 20px; /* Padding inside the dashboard container */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        }
+
+        .dashboard-container h2 {
+            color: #4CAF50; /* Green color for headings */
+            font-size: 22px; /* Font size for headings */
+            margin-bottom: 20px; /* Space below the heading */
+        }
+
+        .stats {
+            display: flex; /* Flexbox for statistics section */
+            justify-content: space-between; /* Space between items */
+            margin-bottom: 20px; /* Space below the stats section */
+        }
+
+        .stat-item {
+            background-color: #e7f3fe; /* Light blue background for stats items */
+            border-radius: 6px; /* Rounded corners */
+            padding: 20px; /* Padding inside the stats items */
+            flex: 1; /* Flex grow to fill space */
+            margin: 0 10px; /* Margin between items */
+            text-align: center; /* Centered text */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        }
+
+        .stat-item h3 {
+            margin: 0; /* No margin for headings */
+            font-size: 20px; /* Font size for statistics headings */
+            color: #4CAF50; /* Green color for stats headings */
+        }
+
+        .stat-item p {
+            margin: 5px 0 0; /* Margin for paragraph below the heading */
+            font-size: 16px; /* Font size for stats paragraph */
+            color: #555; /* Dark gray color for stats text */
+        }
+
+        .actions {
+            display: flex; /* Flexbox for action buttons */
+            justify-content: space-between; /* Space between buttons */
+            margin-top: 20px; /* Space above action buttons */
+        }
+
+        button {
+            padding: 12px 20px; /* Padding inside buttons */
+            background-color: #4CAF50; /* Green background for buttons */
+            color: white; /* White text color for buttons */
+            border: none; /* No border */
+            border-radius: 4px; /* Rounded corners for buttons */
+            font-size: 16px; /* Font size for buttons */
+            cursor: pointer; /* Pointer cursor on hover */
+        }
+
+        button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Admin Dashboard</h1>
+    </div>
+    <div class="sidebar">
+        <a href="#">Dashboard</a>
+        <a href="#">Manage Users</a>
+        <a href="#">Reports</a>
+        <a href="#">Settings</a>
+        <a href="#">Logout</a>
+    </div>
+    <div class="main-content">
+        <div class="dashboard-container">
+            <h2>Overview</h2>
+            <div class="stats">
+                <div class="stat-item">
+                    <h3>Citizens</h3>
+                    <p>1500</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Politicians</h3>
+                    <p>50</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Issues Reported</h3>
+                    <p>200</p>
+                </div>
+            </div>
+            <div class="actions">
+                <button>Add User</button>
+                <button>View Reports</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

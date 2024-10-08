@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citizen Dashboard</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+    <style>
+        /* CSS Code */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9; /* Light background for the body */
+            font-family: Arial, sans-serif; /* Font for the entire page */
+        }
+
+        .navbar {
+            background-color: #4CAF50; /* Green color for the navbar */
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .navbar h1 {
+            color: white; /* White text color for the navbar title */
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .sidebar {
+            width: 250px; /* Width of the sidebar */
+            height: 100vh; /* Full height for the sidebar */
+            position: fixed; /* Fixed position */
+            background-color: #333; /* Dark background for sidebar */
+            padding-top: 20px;
+        }
+
+        .sidebar a {
+            padding: 15px 20px;
+            text-decoration: none; /* No underline for links */
+            font-size: 18px;
+            color: white; /* White text color for links */
+            display: block; /* Block display for links */
+        }
+
+        .sidebar a:hover {
+            background-color: #575757; /* Darker gray on hover */
+        }
+
+        .main-content {
+            margin-left: 260px; /* Margin to the right of the sidebar */
+            padding: 20px; /* Padding for the main content */
+        }
+
+        .dashboard-container {
+            background-color: white; /* White background for dashboard content */
+            border-radius: 8px; /* Rounded corners */
+            padding: 20px; /* Padding inside the container */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        }
+
+        .dashboard-container h2 {
+            color: #4CAF50; /* Green color for headings */
+            font-size: 22px; /* Font size for headings */
+            margin-bottom: 20px; /* Space below the heading */
+        }
+
+        .button {
+            padding: 12px 20px; /* Padding inside buttons */
+            background-color: #4CAF50; /* Green background for buttons */
+            color: white; /* White text color for buttons */
+            border: none; /* No border */
+            border-radius: 4px; /* Rounded corners for buttons */
+            font-size: 16px; /* Font size for buttons */
+            cursor: pointer; /* Pointer cursor on hover */
+            margin-top: 10px; /* Space above button */
+            text-align: center; /* Center text in button */
+            display: inline-block; /* Allow margin on buttons */
+        }
+
+        .button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+
+        .report-issue {
+            margin-top: 20px; /* Space above report issue section */
+        }
+
+        .feedback {
+            margin-top: 20px; /* Space above feedback section */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Citizen Dashboard</h1>
+    </div>
+    <div class="sidebar">
+        <a href="#">Home</a>
+        <a href="#">Report Issues</a>
+        <a href="#">Provide Feedback</a>
+        <a href="#">Updates</a>
+        <a href="#">Logout</a>
+    </div>
+    <div class="main-content">
+        <div class="dashboard-container">
+            <h2>Welcome, Citizen!</h2>
+            <div class="report-issue">
+                <h3>Report an Issue</h3>
+                <p>If you have any issues to report, please click the button below.</p>
+                <button class="button">Report Issue</button>
+            </div>
+            <div class="feedback">
+                <h3>Provide Feedback</h3>
+                <p>Your feedback is important for us to improve. Click below to provide feedback.</p>
+                <button class="button">Provide Feedback</button>
+            </div>
+            <div class="updates">
+                <h3>Updates</h3>
+                <p>Check for the latest updates from your elected representatives.</p>
+                <button class="button">View Updates</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
